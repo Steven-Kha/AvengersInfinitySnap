@@ -102,7 +102,33 @@ def oddNameLeft(biotic, lastOneChosen, chosen, avenger):
     return True
 
 
+def writeMatchUp(chosen, avenger):
+    writeFile = open("matchup.txt", "w")
+    writeFile.close()
 
+    writeFile = open("matchup.txt", "w")
+    for i in range(len(chosen)):
+        writeFile.write(str(chosen[i]) + " vs. " + str(avenger[i]) + "\n")
+
+    writeFile.close()
+
+def writeChosen(chosen):
+    writeFile = open("chosen.txt", "w")
+    writeFile.close()
+
+    writeFile = open("chosen.txt", "w")
+    for i in range(len(chosen)):
+        writeFile.write(str(chosen[i]) + "\n")
+    writeFile.close()
+
+def writeAvenger(avenger):
+    writeFile = open("avenger.txt", "w")
+    writeFile.close()
+
+    writeFile = open("avenger.txt", "w")
+    for i in range(len(avenger)):
+        writeFile.write(str(avenger[i] + "\n"))
+    writeFile.close()
 
 
 

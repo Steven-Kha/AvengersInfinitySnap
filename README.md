@@ -1,4 +1,4 @@
-"# AvengersInfinitySnap" 
+# AvengersInfinitySnap
 
 Idea inspired by Resetera's endgame hype thread.
 

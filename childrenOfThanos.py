@@ -103,12 +103,18 @@ def oddNameLeft(biotic, lastOneChosen, chosen, avenger):
 
 
 def writeMatchUp(chosen, avenger):
+    #first two lines lets you reset the text files over without going out of indices bound
     writeFile = open("matchup.txt", "w")
     writeFile.close()
 
     writeFile = open("matchup.txt", "w")
     for i in range(len(chosen)):
         writeFile.write(str(chosen[i]) + " vs. " + str(avenger[i]) + "\n")
+
+    if range(len(chosen) > len(avenger)):
+        writeFile.write(str(chosen[len(chosen)-1]) + " vs. " + "fate \n")
+    if range(len(avenger) > len(chosen)):
+        writeFile.write(str(avenger[len(avenger)-1]) + " vs. " + "fate \n")
 
     writeFile.close()
 

@@ -42,7 +42,7 @@ while len(biotic) > 0:
         print("")
     if len(biotic) > 0 and len(biotic) < 2:
         print("Last but not least. " + str(biotic[0]) + "...")
-    #time.sleep(3)
+    time.sleep(3)
     #pops the top two biotics or calls oddNameLeft to decide the last name in biotic
     if versus(fiftyFifty, biotic, chosen, avenger, lastOne, lastOneChosen):
         #exit() #has the a print message who is fallen or an avenger
@@ -51,7 +51,7 @@ while len(biotic) > 0:
     print("")
     print("Number of names to be decided still: " + str(len(biotic)))
     print("")
-    #time.sleep(6)
+    time.sleep(6)
     clear()
 
 

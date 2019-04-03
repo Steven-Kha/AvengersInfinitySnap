@@ -108,8 +108,13 @@ def writeMatchUp(chosen, avenger):
     writeFile.close()
 
     writeFile = open("matchup.txt", "w")
-    for i in range(len(chosen)):
-        writeFile.write(str(chosen[i]) + " vs. " + str(avenger[i]) + "\n")
+    if range(len(chosen) > len(avenger)):
+        for i in range(len(avenger)):
+            writeFile.write(str(chosen[i]) + " vs. " + str(avenger[i]) + "\n")
+
+    if range(len(avenger) > len(chosen)):
+        for i in range(len(chosen)):
+            writeFile.write(str(chosen[i]) + " vs. " + str(avenger[i]) + "\n")
 
     if range(len(chosen) > len(avenger)):
         writeFile.write(str(chosen[len(chosen)-1]) + " vs. " + "fate \n")

@@ -51,7 +51,7 @@ while len(biotic) > 0:
     print("")
     print("Number of names to be decided still: " + str(len(biotic)))
     print("")
-    time.sleep(6)
+    time.sleep(3.5)
     clear()
 
 
